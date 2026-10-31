@@ -1,0 +1,5 @@
+hosting/dist/
+hosting/.wrangler/
+node_modules/
+.dev.vars
+*.log

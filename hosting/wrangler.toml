@@ -1,0 +1,16 @@
+name = "daybook"
+main = "worker.js"
+compatibility_date = "2025-06-01"
+
+[assets]
+directory = "./dist"
+binding = "ASSETS"
+run_worker_first = true
+
+# create it with `npx wrangler kv namespace create DB` and paste the id here
+[[kv_namespaces]]
+binding = "DB"
+id = "<your-kv-namespace-id>"
+
+[triggers]
+crons = ["*/5 * * * *"]
